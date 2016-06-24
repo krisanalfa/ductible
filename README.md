@@ -90,19 +90,40 @@ $index = Ductible::get([
 
 #### Update Document Index
 
-**To Be Defined**
+```php
+$result = Ductible::index([
+    'index' => 'myIndex',
+    'type' => 'myType',
+    'id' => 1,
+    'body' => [
+        'fieldFoo' => 'Foo Foo',
+        'fieldBar' => 'Bar Bar',
+        'fieldBaz' => 'Baz Baz',
+    ],
+]);
+```
 
 #### Delete Document Index
 
-**To Be Defined**
+```php
+$index = Ductible::delete([
+    'index' => 'myIndex',
+    'type' => 'type',
+    'id' => 1,
+]); // The result is an array
+```
 
 #### Searching
 
-**To Be Defined**
+```php
+$result = Ductible::search($searchParams);
+```
 
 #### Bulk Indexing Documents
 
-**To Be Defined**
+```php
+$result = Ductible::bulk($searchParams);
+```
 
 ### Using Eloquent
 
