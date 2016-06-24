@@ -57,6 +57,12 @@ You can read from inline docs there. It currently supports many aspect of Elasti
 - `client.ignores` (The library attempts to throw exceptions for common problems. These exceptions match the HTTP response code provided by Elasticsearch.)
 - `client.verbose` (If you require more information, you can tell the client to return a more verbose response.).
 
+You can set multiple hosts by configuring in your `env` file like so:
+
+```
+ELASTICSEARCH_HOSTS="localhost:9200|192.168.1.10:9200|http://myserver.com:9200"
+```
+
 ## Usage
 
 ### Basic
@@ -110,5 +116,5 @@ $index = Ductible::get([
 
 ### ToDo
 
-[] Separate indexing operation based on eloquent model in Ductible main class
-[] More unit testing
+- [ ] Separate indexing operation based on eloquent model in Ductible main class
+- [ ] More unit testing
