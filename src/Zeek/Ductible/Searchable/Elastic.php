@@ -121,7 +121,7 @@ trait Elastic
      *
      * @return array
      */
-    public function delete()
+    public function prune()
     {
         return App::make('ductible')->prune($this);
     }
