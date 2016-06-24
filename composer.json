@@ -1,0 +1,29 @@
+{
+    "name": "krisanalfa/ductible",
+    "description": "Laravel and ElasticSearch in harmony.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krisan Alfa Timur",
+            "email": "krisan47@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Zeek\\Ductible\\": "src/Zeek/Ductible"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {"Ductible\\": "tests/Ductible"}
+    },
+    "require": {
+        "laravel/laravel": "~5.1",
+        "elasticsearch/elasticsearch": "~2.2",
+        "doctrine/dbal": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4",
+        "fzaninotto/faker": "^1.6"
+    }
+}
